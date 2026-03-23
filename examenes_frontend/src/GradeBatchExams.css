@@ -1,0 +1,156 @@
+.grade-batch-exams-container {
+  max-width: 520px;
+  width: 95vw;
+  margin: 32px auto;
+  padding: 24px 20px;
+  background-color: #212937;
+  border-radius: 15px;
+  box-shadow: 0 6px 24px rgba(44, 65, 103, 0.13);
+  color: #afe1ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.grade-batch-exams-container h2 {
+  text-align: center;
+  color: #7ecbff;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 28px;
+}
+
+.grade-batch-exams-form label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #afe1ff;
+  margin-bottom: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.grade-batch-exams-form input[type="file"],
+.grade-batch-exams-form select,
+.grade-batch-exams-form textarea {
+  width: 100%;
+  max-width: 100%;
+  background-color: #191e24;
+  border: 1.5px solid #27476b;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #d7e3f8;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-top: 6px;
+}
+
+.grade-batch-exams-form input[type="number"] {
+  width: 60px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1.5px solid #27476b;
+  background: #191e24;
+  color: #d7e3f8;
+  margin-left: 8px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.grade-batch-exams-form input[type="file"]:focus,
+.grade-batch-exams-form select:focus,
+.grade-batch-exams-form textarea:focus,
+.grade-batch-exams-form input[type="number"]:focus {
+  border-color: #7ecbff;
+  outline: none;
+  box-shadow: 0 0 8px #7ecbffaa;
+}
+
+.grade-batch-exams-radio-group {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  color: #afe1ff;
+}
+
+.grade-batch-exams-radio-group label {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: normal;
+}
+
+.grade-batch-exams-buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.grade-batch-exams-buttons button {
+  background-color: #2478d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 180px;
+  margin: 0 8px;
+  user-select: none;
+}
+
+.grade-batch-exams-buttons button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: #27476b;
+}
+
+.grade-batch-exams-buttons button:hover:not(:disabled) {
+  background-color: #1c5cad;
+}
+
+.grade-batch-exams-back-btn {
+  background-color: transparent;
+  border: 1px solid #7ecbff;
+  color: #7ecbff;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 24px;
+  user-select: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.grade-batch-exams-back-btn:hover {
+  background-color: #7ecbff;
+  color: #1b273b;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .grade-batch-exams-container {
+    padding: 20px 12px;
+    margin: 20px 8px;
+  }
+  .grade-batch-exams-buttons {
+    flex-direction: column;
+  }
+  .grade-batch-exams-buttons button {
+    margin: 8px 0;
+    width: 100%;
+    min-width: unset;
+  }
+  .grade-batch-exams-back-btn {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .grade-batch-exams-radio-group {
+    flex-direction: column;
+  }
+}

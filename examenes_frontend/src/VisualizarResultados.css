@@ -1,0 +1,238 @@
+.visualizar-resultados-container {
+  max-width: 720px;
+  margin: 36px auto;
+  background: #212b37;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(44,65,103,0.15);
+  padding: 32px 30px;
+  color: #e8f0f6;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.visualizar-resultados-container h2 {
+  text-align: center;
+  color: #7ecbff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 0.8px;
+}
+
+.visualizar-resultados-infos {
+  margin-bottom: 24px;
+}
+
+.visualizar-resultados-infos label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #b5d8f6;
+  display: block;
+}
+
+.visualizar-resultados-infos input[type="text"],
+.visualizar-resultados-infos textarea {
+  background: #191e24;
+  color: #e8f0f6;
+  border-radius: 8px;
+  border: 1.5px solid #27476b;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  padding: 7px 14px;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.visualizar-resultados-infos textarea {
+  min-height: 52px;
+  resize: vertical;
+}
+
+.visualizar-resultados-infos input[type="text"]:focus,
+.visualizar-resultados-infos textarea:focus {
+  border-color: #7ecbff;
+  outline: none;
+}
+
+.visualizar-resultados-infos-label {
+  font-weight: 600;
+}
+
+.visualizar-resultados-notas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.visualizar-resultados-nota {
+  background: #273449;
+  color: #afe1ff;
+  border-radius: 10px;
+  padding: 20px 18px;
+  box-shadow: 0 2px 14px #21406030;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: box-shadow 0.16s, transform 0.16s;
+}
+
+.visualizar-resultados-nota:hover {
+  box-shadow: 0 12px 36px #3873a84c;
+  transform: translateY(-2px) scale(1.01);
+}
+
+.visualizar-resultados-nota strong {
+  color: #b5d8f6;
+  font-weight: 650;
+}
+
+.visualizar-resultados-nota label {
+  display: block;
+  font-weight: 500;
+  margin: 7px 0 3px 0;
+  color: #aad8f6;
+}
+
+.visualizar-resultados-nota textarea {
+  width: 100%;
+  min-height: 32px;
+  padding: 7px 12px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  background: #191e24;
+  border-radius: 8px;
+  border: 1.2px solid #27476b;
+  color: #e8f0f6;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.visualizar-resultados-nota input[type="number"] {
+  background: #191e24;
+  color: #e8f0f6;
+  border-radius: 7px;
+  border: 1.2px solid #27476b;
+  font-size: 1rem;
+  text-align: center;
+  width: 72px;
+  padding: 7px 12px;
+  margin-left: 8px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.visualizar-resultados-nota input[type="number"]:focus {
+  border-color: #5ea7d7;
+  outline: none;
+}
+
+.visualizar-resultados-guardar-btn {
+  background: #3873a8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding: 12px 28px;
+  cursor: pointer;
+  margin: 28px auto 0 auto;
+  display: block;
+  box-shadow: 0 2px 10px #3873a859;
+  transition: background 0.15s;
+}
+
+.visualizar-resultados-guardar-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.visualizar-resultados-guardar-btn:hover:not(:disabled) {
+  background: #255080;
+}
+
+@media (max-width: 800px) {
+  .visualizar-resultados-container {
+    padding: 18px 6vw;
+    border-radius: 13px;
+  }
+  .visualizar-resultados-nota {
+    padding: 15px 7vw;
+    border-radius: 8px;
+  }
+  .visualizar-resultados-notas {
+    gap: 13px;
+  }
+}
+.visualizar-resultados-input-nota {
+  background: #191e24;
+  color: #e8f0f6;
+  border-radius: 7px;
+  border: 1.2px solid #27476b;
+  font-size: 1rem;
+  width: 80px;
+  padding: 7px 12px;
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  text-align: center;
+  transition: border-color 0.15s;
+}
+
+.visualizar-resultados-input-nota:focus {
+  border-color: #5ea7d7;
+  outline: none;
+}
+
+/* Para los inputs generales de nota asignada y nota máxima del examen */
+.visualizar-resultados-infos input[type="number"] {
+  background: #191e24;
+  color: #e8f0f6;
+  border-radius: 8px;
+  border: 1.5px solid #27476b;
+  font-size: 1.1rem;
+  width: 110px;
+  padding: 8px 14px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 500;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.visualizar-resultados-infos input[type="number"]:focus {
+  border-color: #7ecbff;
+  outline: none;
+}
+
+/* Para inputs de nota máxima y nota asignada dentro de cada ejercicio */
+.visualizar-resultados-input-nota {
+  background: #191e24;
+  color: #e8f0f6;
+  border-radius: 7px;
+  border: 1.2px solid #27476b;
+  font-size: 1rem;
+  width: 80px;
+  padding: 7px 12px;
+  margin: 6px 8px 2px 4px;
+  text-align: center;
+  transition: border-color 0.15s;
+}
+
+.visualizar-resultados-input-nota:focus {
+  border-color: #5ea7d7;
+  outline: none;
+}
+
+/* Etiquetas para los campos de nota asignada y máxima */
+.visualizar-resultados-label-nota {
+  font-weight: 600;
+  color: #b5d8f6;
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 2px;
+  font-size: 1rem;
+}

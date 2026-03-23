@@ -1,0 +1,46 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: evaluia-mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER:-root}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-example}
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "mongodb://localhost:27017/admin", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./examenes_backend/Dockerfile
+    container_name: evaluia-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      MONGODB_URI: ${MONGODB_URI:-mongodb://root:example@mongo:27017/miappdb?authSource=admin}
+    volumes:
+      - .:/app
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  frontend:
+    build: ./examenes_frontend
+    container_name: evaluia-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:

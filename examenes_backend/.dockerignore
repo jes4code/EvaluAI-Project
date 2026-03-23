@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+.venv
+.env
+temp_pdfs
+tmp
+.git

@@ -1,0 +1,70 @@
+.teacher-dashboard {
+  min-height: 100vh;
+  background: #181c21;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+}
+
+.teacher-header {
+  background: #214060;
+  padding: 16px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-header h2 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.logout-btn {
+  background: #3873a8;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logout-btn:hover {
+  background: #16324b;
+}
+
+.teacher-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 5vw;
+}
+
+.menu-card {
+  background: #212b37;
+  border-radius: 12px;
+  padding: 26px;
+  width: 240px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 16px #0004;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px #0006;
+}
+
+.menu-card h3 {
+  color: #b5d8f6;
+  margin: 10px 0 6px 0;
+  font-size: 1.25rem;
+}
+
+.menu-card p {
+  font-size: 1.05rem;
+  color: #87a7cb;
+}

@@ -1,0 +1,113 @@
+.view-batch-exams-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e2f44;
+}
+
+.view-batch-exams-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.view-batch-exams-info {
+  margin-bottom: 24px;
+}
+
+.view-batch-exams-info label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.view-batch-exams-info input[type="text"],
+.view-batch-exams-info input[type="number"],
+.view-batch-exams-info textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.view-batch-exams-info textarea {
+  min-height: 100px;
+}
+
+.view-batch-exams-grade {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #f9fafb;
+}
+
+.view-batch-exams-grade label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.view-batch-exams-grade strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.view-batch-exams-grade textarea,
+.view-batch-exams-grade input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.view-batch-exams-grade input[type="number"] {
+  max-width: 80px;
+}
+
+.view-batch-exams-grade div {
+  margin-top: 8px;
+}
+
+.view-batch-exams-save-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: #3a7bd5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(58, 123, 213, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.view-batch-exams-save-btn:hover:enabled {
+  background-color: #2e65bb;
+}
+
+.view-batch-exams-save-btn:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.view-batch-exams-container p {
+  font-style: italic;
+  color: #64748b;
+  text-align: center;
+}

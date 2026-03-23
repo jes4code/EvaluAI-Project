@@ -1,0 +1,72 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.login-form {
+  background: #212b37;
+  border-radius: 15px;
+  padding: 36px 28px;
+  box-shadow: 0 4px 24px #21406022;
+  min-width: 320px;
+}
+
+.login-form h2 {
+  color: #3873a8;
+  margin-bottom: 18px;
+}
+
+.login-form div.inputs {
+  margin-bottom: 17px;
+}
+
+.login-form input[type='email'],
+.login-form input[type='password'] {
+  width: 100%;
+  padding: 11px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.login-form .error-message {
+  color: #e04a4a;
+  margin-bottom: 11px;
+}
+
+.login-form button {
+  background: #3873a8;
+  color: #fff;
+  border-radius: 7px;
+  border: 0;
+  padding: 9px 23px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.login-form button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.login-form p.register-text {
+  color: #b6bed2;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login-form p.register-text span {
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: underline;
+}

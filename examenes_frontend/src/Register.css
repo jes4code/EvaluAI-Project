@@ -1,0 +1,94 @@
+.register-container {
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 36px 28px;
+  background: #212b37;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px #21406022;
+  min-width: 320px;
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.register-container h2 {
+  color: #3873a8;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 11px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.role-selector {
+  margin: 8px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  color: #b6bed2;
+  font-weight: 500;
+}
+
+.role-selector label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 9px 23px;
+  background: #3873a8;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.register-form button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.register-form button:hover:not(:disabled) {
+  background: #2c516d;
+}
+
+.success-message {
+  color: #9fe99f;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.error-message {
+  color: #e04a4a;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login-link {
+  margin-top: 16px;
+  color: #b6bed2;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.login-link span {
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: underline;
+}

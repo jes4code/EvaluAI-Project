@@ -1,0 +1,156 @@
+.app-background {
+  min-height: 100vh;
+  background: #181c21;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar-centered {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-content {
+  background: #214060;
+  border-radius: 16px;
+  box-shadow: 0 3px 16px #0004;
+  min-width: 315px;
+  max-width: 580px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 36px;
+  margin-bottom: 0px;
+}
+
+.navbar {
+  width: 100%;
+  background: #214060;
+  box-shadow: 0 3px 16px #0005;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 78px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.navbar-login-btn {
+  background: #3873a8;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 26px 9px 26px;
+  font-size: 1.03rem;
+  font-weight: bold;
+  box-shadow: 0 2px 10px #3873a88e;
+  cursor: pointer;
+  transition: background 0.18s;
+  margin-right: 10px;
+}
+
+.navbar-login-btn:last-child {
+  margin-right: 0;
+}
+
+.navbar-login-btn:hover {
+  background: #16324b;
+}
+
+.main-content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 50px 5vw 0 5vw;
+  text-align: center;
+}
+
+.main-content h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.main-content .highlight {
+  color: #3873a8;
+}
+
+.subtitle {
+  color: #b6bed2;
+  font-size: 1.13rem;
+  margin-bottom: 38px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.feature-card {
+  background: #212b37;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px #21406040;
+  padding: 32px 22px 18px 22px;
+  min-width: 216px;
+  max-width: 245px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e8f0f6;
+  transition: transform .14s, box-shadow .14s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 10px 40px #3873a844;
+}
+
+.feature-card svg,
+.feature-card img {
+  margin-bottom: 17px;
+}
+
+.feature-card h3 {
+  color: #b5d8f6;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #87a7cb;
+  font-size: 1.03rem;
+}
+
+@media (max-width: 820px) {
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}

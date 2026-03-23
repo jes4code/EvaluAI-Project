@@ -1,0 +1,72 @@
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+
+# Node / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Frontend build outputs (CRA/Vite/others)
+build/
+dist/
+.out/
+.next/
+coverage/
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Local data (if you ever bind-mount volumes)
+data/
+mongo_data/
+mongodb_data/
+
+# PDF / uploads / generated files (ajusta a tus carpetas reales)
+uploads/
+tmp/
+temp/
+*.pdf
