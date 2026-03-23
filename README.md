@@ -1,55 +1,53 @@
-# EvaluIA (FastAPI + React + MongoDB + Docker)
+# EvaluAI (FastAPI + React + MongoDB + Docker)
 
-Aplicación web para evaluación automática de exámenes asistida por LLM, con generación de feedback a partir de rúbricas (opcional). Integra un flujo completo desde la subida de entregas (PDF/archivos) y la definición de criterios, hasta la evaluación, el reporte de resultados y la exportación/consulta posterior para revisión. 
+Web application for automated exam grading assisted by an LLM, with optional feedback generation based on rubrics. It integrates a complete workflow from submission upload (PDF/files) and criteria definition, to evaluation, result reporting, and later export/query for review.
 
-El objetivo del proyecto es agilizar la corrección y estandarizar criterios de evaluación, manteniendo trazabilidad de resultados y feedback (según configuración del docente). Está orientado como proyecto de TFG para demostrar una arquitectura full‑stack (FastAPI + React + MongoDB + Docker) e integración con un proveedor LLM (p. ej., Gemini) de forma configurable. 
+The objective of the project is to streamline grading and standardize evaluation criteria, while maintaining traceability of results and feedback (depending on the teacher’s configuration). It is designed as a final degree project (TFG) to demonstrate a full-stack architecture (FastAPI + React + MongoDB + Docker) and integration with a configurable LLM provider (e.g., Gemini). 
 
-## Arquitectura
+## Architecture
 
-El proyecto está dividido en los siguientes componentes principales:
+The project is divided into the following main components:
 
-- Backend: API REST con FastAPI (gestiona lógica de negocio, evaluación y persistencia).
-- Frontend: React (interfaz para subir documentos, gestionar rúbricas y revisar resultados).
-- Base de datos: MongoDB (almacén de rúbricas, exámenes, resultados, etc.).
-- LLM provider: integración vía API (por ejemplo, Google Gemini).
-- Infra: Docker / Docker Compose para desarrollo y despliegue local.
+-Backend: REST API with FastAPI (handles business logic, evaluation, and persistence).
+-Frontend: React (interface for uploading documents, managing rubrics, and reviewing results).
+-Database: MongoDB (stores rubrics, exams, results, etc.).
+-LLM provider: API integration (for example, Google Gemini).
+-Infrastructure: Docker / Docker Compose for development and local deployment.
 
-## Vista rápida
+## Quick Overview
 
 <img src="docs/img/paginaPrincipal.png" width="700" alt="Pantalla principal" />
 <img src="docs/img/corregirExamen.png" width="700" alt="Pantalla de inicio" />
 
-Más capturas: [docs/img/](docs/img/)
+More screenshots: [docs/img/](docs/img/)
 
-## Tecnologías
+## Technologies
 
 - Backend: Python + FastAPI (+ Uvicorn).
 - Frontend: React 
-- Base de datos: MongoDB.
+- Database: MongoDB
 - Infra/DevOps: Docker, Docker Compose.
 - LLM: Google Gemini API 
 
-## Cómo ejecutar
+## How to run
 
-## Cómo ejecutar
+### With Docker (recommended)
 
-### Con Docker (recomendado)
-
-1) Crea tu archivo de entorno:
+1) Create your environment file:
 
 ```bash
 cp .env.example .env
 ```
 
-2) Levanta el stack:
+2) Start the stack:
   ```bash
     docker compose up --build
   ```
-3)Abre la app:
+3) Open the app:
 
 Frontend: http://localhost:3000
 
-### En local (sin Docker)
+### Locally (without Docker)
 Backend:
 ```bash
 cd backend
@@ -67,4 +65,4 @@ npm install
 npm run dev
 ```
  
-Importante (modo local): si ejecutas el proyecto **sin Docker**, necesitas tener MongoDB disponible (local o remoto) y configurar la variable `MONGO_URI` en tu `.env`.
+Important (local mode): if you run the project **without Docker**, you need to have MongoDB available (local or remote) and set the `MONGO_URI` variable in your `.env` file.
