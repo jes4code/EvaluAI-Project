@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, Navigate, useParams, useNavigate } from "react-router-dom";
-import "./ViewBatchExams.css";
+import "./EditCorrection.css";
 
 
 function EditCorrection() {
