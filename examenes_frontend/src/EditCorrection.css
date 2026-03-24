@@ -1,21 +1,16 @@
 .edit-correction-container {
-  max-width: 720px;
-  margin: 36px auto;
-  background: #212b37;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(44, 65, 103, 0.15);
-  padding: 32px 30px;
-  color: #e8f0f6;
-  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e2f44;
 }
 
 .edit-correction-title {
   text-align: center;
-  color: #7ecbff;
-  font-size: 2.1rem;
-  font-weight: 700;
   margin-bottom: 24px;
-  letter-spacing: 0.8px;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .edit-correction-info {
@@ -23,155 +18,103 @@
 }
 
 .edit-correction-info label {
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #b5d8f6;
   display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
 .edit-correction-info input[type="text"],
 .edit-correction-info input[type="number"],
 .edit-correction-info textarea {
-  background: #191e24;
-  color: #e8f0f6;
-  border-radius: 8px;
-  border: 1.5px solid #27476b;
-  font-size: 1rem;
   width: 100%;
+  padding: 8px 10px;
   margin-top: 6px;
-  margin-bottom: 12px;
-  padding: 7px 14px;
-  transition: border-color 0.15s;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
   box-sizing: border-box;
 }
 
 .edit-correction-info textarea {
-  min-height: 52px;
-  resize: vertical;
-}
-
-.edit-correction-info input:focus,
-.edit-correction-info textarea:focus {
-  border-color: #7ecbff;
-  outline: none;
-}
-
-.edit-correction-info-label {
-  font-weight: 600;
-}
-
-.edit-correction-grades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 28px;
+  min-height: 100px;
 }
 
 .edit-correction-grade {
-  background: #273449;
-  color: #afe1ff;
-  border-radius: 10px;
-  padding: 20px 18px;
-  box-shadow: 0 2px 14px #21406030;
-  margin-bottom: 20px;
-  width: 100%;
-  transition: box-shadow 0.16s, transform 0.16s;
-}
-
-.edit-correction-grade:hover {
-  box-shadow: 0 12px 36px #3873a84c;
-  transform: translateY(-2px) scale(1.01);
-}
-
-.edit-correction-grade strong {
-  color: #b5d8f6;
-  font-weight: 650;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #f9fafb;
 }
 
 .edit-correction-grade label {
   display: block;
-  font-weight: 500;
-  margin: 7px 0 8px 0;
-  color: #aad8f6;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-.edit-correction-grade textarea {
+.edit-correction-grade strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.edit-correction-grade textarea,
+.edit-correction-grade input[type="number"] {
   width: 100%;
-  min-height: 32px;
-  padding: 7px 12px;
-  margin-top: 3px;
-  margin-bottom: 8px;
-  background: #191e24;
-  border-radius: 8px;
-  border: 1.2px solid #27476b;
-  color: #e8f0f6;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   font-size: 1rem;
-  resize: vertical;
+  font-family: inherit;
   box-sizing: border-box;
+  resize: vertical;
 }
 
 .edit-correction-grade input[type="number"] {
-  background: #191e24;
-  color: #e8f0f6;
-  border-radius: 7px;
-  border: 1.2px solid #27476b;
-  font-size: 1rem;
-  text-align: center;
-  width: 80px;
-  padding: 7px 12px;
-  margin-left: 8px;
-  margin-top: 6px;
-  margin-bottom: 2px;
+  max-width: 80px;
 }
 
-.edit-correction-grade input[type="number"]:focus {
-  border-color: #5ea7d7;
-  outline: none;
+.edit-correction-grade div {
+  margin-top: 8px;
+}
+
+.edit-correction-save-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: #3a7bd5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(58, 123, 213, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.edit-correction-save-btn:hover:enabled {
+  background-color: #2e65bb;
+}
+
+.edit-correction-save-btn:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
 }
 
 .edit-correction-no-data,
 .edit-correction-saving {
-  color: #b5d8f6;
+  font-style: italic;
+  color: #64748b;
   text-align: center;
-  width: 100%;
 }
 
-.edit-correction-save-btn {
-  background: #3873a8;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 1.15rem;
-  padding: 12px 28px;
-  cursor: pointer;
-  margin: 28px auto 0 auto;
-  display: block;
-  box-shadow: 0 2px 10px #3873a859;
-  transition: background 0.15s;
-}
-
-.edit-correction-save-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.edit-correction-save-btn:hover:not(:disabled) {
-  background: #255080;
-}
-
-@media (max-width: 800px) {
-  .edit-correction-container {
-    padding: 18px 6vw;
-    border-radius: 13px;
-  }
-
-  .edit-correction-grade {
-    padding: 15px 7vw;
-    border-radius: 8px;
-  }
-
-  .edit-correction-grades {
-    gap: 13px;
-  }
+.edit-correction-container p {
+  font-style: italic;
+  color: #64748b;
+  text-align: center;
 }
