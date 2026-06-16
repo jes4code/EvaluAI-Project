@@ -33,6 +33,23 @@ More screenshots: [docs/img/](docs/img/)
 
 Below is the step-by-step workflow of **EvaluAI** evaluating a real Computer Science exam (*Análisis y Diseño de Algoritmos*).
 
+### 0. Rubric Management
+Create, view, and fine-tune formal evaluation rubrics before grading. The system supports full CRUD operations, allowing you to manage question statements, itemized criteria, and custom point distributions.
+
+| Rubrics Dashboard (List) | Creating a New Rubric |
+| :---: | :---: |
+| <img src="docs/img/rubrics_list.png" width="460" alt="My Rubrics dashboard view" /> | <img src="docs/img/create_rubric_form.png" width="460" alt="Blank create rubric interface" /> |
+
+<details>
+<summary>⚙️ View Rubric Editing Modal</summary>
+<br>
+You can easily adjust details, append new criteria, or modify points for existing rubrics at any time through the quick edit view.
+
+<img src="docs/img/edit_rubric_modal.png" width="400" alt="Edit rubric populated modal" />
+</details>
+
+---
+
 ### 1. Grading Setup
 Select your pre-configured rubric, write custom guidelines for the AI evaluator, and upload the student's exam PDF.
 
