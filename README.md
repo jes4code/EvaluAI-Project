@@ -66,7 +66,7 @@ Teachers can track all evaluations from the history table and download a clean, 
 
 | Exam History List | Downloaded PDF Report Sample |
 | :---: | :---: |
-| <img src="docs/img/my_exams_list.png" width="450" alt="My exams list table" /> | <img src="docs/img/exam_report_pdf.png" width="400" alt="Official PDF Exam Report" /> |
+| <img src="docs/img/my_exam_list.png" width="450" alt="My exams list table" /> | <img src="docs/img/exam_report_pdf.png" width="400" alt="Official PDF Exam Report" /> |
 
 ## How to run
 
